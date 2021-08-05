@@ -7,7 +7,91 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* app styles */
+.container{
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  min-height: 100vh;
+  padding-top: 30px;
+  
+}
+.App {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+  width: 90%;
+  max-height: 90vh;
+  border-radius: 10px;
+}
+
+.navbar{
+  padding: 10px 20px;
+  text-align: center;
+  border-radius: 10px;
+  position: relative;
+}
+.navbar h1{
+  margin: 10px 0;
+}
+.navbar img{
+  position: absolute;
+  top: 30px;
+  right: 20px;
+  width: 32px;
+  height: auto;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.book-list {
+  padding: 20px 35px;
+  overflow-y: scroll;
+  max-height: calc(90vh * 0.51);
+}
+.book-list ul{
+  padding: 0;
+}
+.book-list li {
+  padding: 10px;
+  margin: 10px auto;
+  border-radius: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  list-style-type: none;
+}
+.book-list li:hover{
+  opacity: 0.7;
+  text-decoration: line-through;
+}
+.book-list .title{
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.book-list .author{
+  font-size: 0.9rem;
+}
+.empty{
+  margin: 20px;
+  text-align: center;
+}
+
+form{
+  padding: 20px 15%;
+}
+input[type='text'] {
+  width: 100%;
+  max-height: 25px;
+  box-sizing: border-box;
+  padding: 5px;
+  margin: 6px 0;
+  border: 0;
+}
+
+input[type='submit']{
+  margin: 10px auto;
+  background-color: #eee;
+  border: 0;
+  padding: 6px 20px;
+  display: block;
 }
