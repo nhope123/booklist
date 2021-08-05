@@ -12,7 +12,7 @@ export default function Navbar() {
     return (
         <div className={'navbar'} style={{ background: styles.ui, color: styles.text}}>
             <h1 >Ninja Reading</h1>
-            <p >{`Currently you have ${books.length} to get throught ...`} </p>
+            <p >{`Currently you have ${books.length} books to get throught ...`} </p>
             <img src={ image.src } alt={ image.alt }  tabIndex={'0'} title={'Change color theme'}
                  onClick={ toogleLightTheme} />
         </div>

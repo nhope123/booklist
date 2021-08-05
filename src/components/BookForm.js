@@ -25,7 +25,8 @@ const BookForm = () => {
                    onChange={ e => setTitle(e.target.value)} tabIndex={'0'} required/>
             <input type={'text'} value={author} placeholder={'Author'} style={ textInputStyle }
             onChange={ e => setAuthor(e.target.value)} tabIndex={'0'} required/>
-            <input type={'submit'} tabIndex={'0'} value={'Add book'} style={ submitInputStyle } />
+            <input type={'submit'} tabIndex={'0'} value={'Add book'} 
+                   style={ submitInputStyle } title={ 'Submit New Book'} />
         </form >
     )
 }
