@@ -8,7 +8,7 @@ export default function Navbar() {
     const { books } = useContext( BookContext )
     const { isLightTheme,toogleLightTheme, themes } = useContext( ThemeContext )
     const styles = isLightTheme? themes.light: themes.dark
-    const image = isLightTheme? {src: sun, alt: 'Sun with sunrays'} : { src: moon, alt: 'Moon with moon craters'}
+    const image = !isLightTheme? {src: sun, alt: 'Sun with sunrays'} : { src: moon, alt: 'Moon with moon craters'}
     return (
         <div className={'navbar'} style={{ background: styles.ui, color: styles.text}}>
             <h1 >Ninja Reading</h1>
